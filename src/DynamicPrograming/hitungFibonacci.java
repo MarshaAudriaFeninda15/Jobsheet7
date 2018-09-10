@@ -32,7 +32,28 @@ public class hitungFibonacci {
             return spongebob[n-1];
                 
             }
+        private static void tampilSpongebob(int n, BigInteger spongebob) 
+        {
+            System.out.println("Bilangan Fibonacci ke- " + n + " : " + spongebob);
+            
+            
+        }
+       
+     public static void main(String[] args) 
+        {
+       
+            
+            
+        String identitas = "Janice Marsha Audria Feninda Effendi / X RPL 3 / 14";
         
+         tampilJudul(identitas);
+         
+        int n = tampilInput();
+          
+        BigInteger spongebob = fibo(n);
+        
+        tampilSpongebob(n, spongebob);
+        }    
         
     
 }
