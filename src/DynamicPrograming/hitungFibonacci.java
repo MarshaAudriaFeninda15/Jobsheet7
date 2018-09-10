@@ -18,6 +18,21 @@ public class hitungFibonacci {
             int n = marsa.nextInt();
             return n;
         }
+     private static BigInteger fibo(int n) {
+            
+            BigInteger[] spongebob = new BigInteger[n];
+            
+            spongebob[0] = BigInteger.ONE;
+            spongebob[1] = BigInteger.ONE;
+            
+            for (int i = 2; i < spongebob.length; i++) {
+                spongebob[i] = spongebob[i-1].add(spongebob[i-1]);
+            }
+            
+            return spongebob[n-1];
+                
+            }
+        
         
     
 }
